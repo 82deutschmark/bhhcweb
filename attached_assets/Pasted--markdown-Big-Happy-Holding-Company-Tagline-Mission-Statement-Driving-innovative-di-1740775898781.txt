@@ -1,0 +1,53 @@
+```markdown
+# Big Happy Holding Company
+
+**Tagline / Mission Statement**  
+Driving innovative digital solutions and sustainable value creation through strategic investments in mobile software and gaming applications.
+
+---
+
+## About Us
+Big Happy Holding Company is a private investment and operating firm dedicated to acquiring, developing, and distributing mobile software applications. Our mission is to cultivate a diverse, growth-oriented portfolio that leverages innovative technology, creative vision, and operational excellence to deliver meaningful returns for our partners. We pride ourselves on collaboration, transparency, and a forward-thinking approach to every venture we pursue.
+
+---
+
+## Leadership & Partners
+We refer to our co-owners as “the partners,” each with distinct roles that shape the firm’s direction and ensure its sustained success.
+
+1. **Andreas Vagelatos**  
+   - *Chief Executive Officer (CEO) & Chief Financial Officer (CFO)*  
+   - ![CEO - Andreas](https://cdn.midjourney.com/1997c3fd-9161-41a8-ae8a-6754dc446f67/0_0.png)  
+   - Provides overall leadership and strategic direction. Oversees financial planning and ensures the company remains fiscally resilient for long-term growth.
+
+2. **Mark Barney**  
+   - *Chief Technology Officer (CTO)*  
+   - ![CTO - Mark](https://cdn.midjourney.com/635529cd-51ec-49d1-a520-1b5d91a92e99/0_2.png)  
+   - Directs the technological vision of Big Happy Holding Company, focusing on product development and platform integrity across our diverse portfolio of mobile apps.
+
+3. **Brianne Baker**  
+   - *Chief Creative Officer (CCO)*  
+   - **Links**: [LinkedIn](https://www.linkedin.com/in/briannebaker) | [Portfolio](https://www.brianne.work/)  
+   - Heads our creative efforts, user experience, and product design—particularly around the “Peekaboo Studio” brand. She ensures our apps maintain a distinctive visual identity and delivers engaging user experiences.
+
+4. **Eric Dickinson**  
+   - *General Counsel*  
+   - ![General Counsel - Eric](https://cdn.midjourney.com/635529cd-51ec-49d1-a520-1b5d91a92e99/0_1.png)  
+   - Manages the company’s legal affairs, from overseeing compliance and contract negotiations to handling intellectual property matters. Ensures the firm’s operations are conducted in accordance with all applicable regulations.
+
+---
+
+## Our Approach
+- **Strategic Portfolio:** Each acquisition is chosen to complement our existing suite of products, maximizing synergy and overall market reach.  
+- **Creative & Technical Balance:** We unite pioneering design with robust engineering, ensuring that new and existing applications remain modern and competitive.  
+- **Long-Term Perspective:** We’re an investor-minded organization focused on sustainable value. We reinvest in promising ventures and prioritize partnerships that share our vision.  
+
+---
+
+## Featured Portfolio
+- [Peekaboo Barn](https://apps.apple.com/us/app/peekaboo-barn/id300590611)
+
+---
+
+## Ready to Connect?
+We welcome collaborations with studios, founders, and strategic partners who share our commitment to excellence and innovation. Whether you’re building the next big app or looking to transition existing assets, Big Happy Holding Company is here to explore the possibilities with you.
+```
