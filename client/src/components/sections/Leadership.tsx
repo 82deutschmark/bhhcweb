@@ -19,6 +19,7 @@ const leaders = [
     role: "Chief Creative Officer (CCO)",
     description: "Heads our creative efforts, user experience, and product design—particularly around the Peekaboo Studio brand. She ensures our apps maintain a distinctive visual identity and delivers engaging user experiences.",
     linkedin: "https://www.linkedin.com/in/briannebaker",
+    portfolio: "https://www.brianne.work/",
     image: "https://cdn.midjourney.com/d6c48f7e-0a5e-41fc-83f0-aba0dcc4c4cc/0_3.png"
   },
   {
@@ -56,7 +57,18 @@ export default function Leadership() {
                   <div className={`${leader.image ? 'md:w-3/5' : 'w-full'}`}>
                     <div className="flex justify-between items-start mb-4">
                       <div>
-                        <h3 className="text-2xl font-bold text-primary">{leader.name}</h3>
+                        {leader.portfolio ? (
+                          <a 
+                            href={leader.portfolio}
+                            target="_blank"
+                            rel="noopener noreferrer"
+                            className="inline-block hover:text-primary transition-colors"
+                          >
+                            <h3 className="text-2xl font-bold text-primary">{leader.name}</h3>
+                          </a>
+                        ) : (
+                          <h3 className="text-2xl font-bold text-primary">{leader.name}</h3>
+                        )}
                         <p className="text-sm font-medium text-gray-600 mt-2">{leader.role}</p>
                       </div>
                       {leader.linkedin && (
