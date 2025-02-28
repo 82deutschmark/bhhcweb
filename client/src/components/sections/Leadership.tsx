@@ -31,9 +31,12 @@ const leaders = [
 
 export default function Leadership() {
   return (
-    <section id="leadership" className="py-24 bg-gradient-to-b from-gray-50 to-white">
+    <section id="leadership" className="py-24 bg-gradient-to-b from-gray-50 to-white section-transition">
       <div className="container mx-auto px-4">
-        <h2 className="text-4xl font-bold mb-12 text-center">Leadership & Partners</h2>
+        <div className="text-center mb-16">
+          <h2 className="text-4xl font-bold mb-4 text-primary">Leadership & Partners</h2>
+          <div className="w-24 h-1 bg-primary mx-auto mb-8 rounded-full"></div>
+        </div>
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-8">
           {leaders.map((leader) => (
             <Card key={leader.name} className="overflow-hidden hover:shadow-lg transition-shadow duration-300">

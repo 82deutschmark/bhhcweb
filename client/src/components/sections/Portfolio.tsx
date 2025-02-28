@@ -11,9 +11,10 @@ const StarRating = ({ rating }: { rating: number }) => (
 );
 
 const ReviewCard = ({ text }: { text: string }) => (
-  <div className="bg-white/50 p-6 rounded-xl shadow-sm hover:shadow-md transition-shadow duration-300">
+  <div className="bg-white/70 p-6 rounded-xl shadow-md hover:shadow-lg transition-all duration-300 hover:-translate-y-1 border border-gray-100">
     <StarRating rating={5} />
     <p className="text-gray-700 text-sm mt-3 leading-relaxed">{text}</p>
+    <div className="mt-3 h-1 w-12 bg-primary/50 rounded-full"></div>
   </div>
 );
 
