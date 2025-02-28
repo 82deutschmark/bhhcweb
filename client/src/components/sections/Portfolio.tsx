@@ -79,7 +79,7 @@ export default function Portfolio() {
                 </div>
                 <div className="relative aspect-[3/4] bg-gradient-to-b from-gray-100 to-white rounded-2xl overflow-hidden shadow-2xl">
                   <img
-                    src="https://is1-ssl.mzstatic.com/image/thumb/Purple116/v4/51/c5/85/51c5855f-8631-6245-8fb0-642ce3ea8555/AppIcon-0-0-1x_U007emarketing-0-0-0-7-0-0-sRGB-0-0-0-GLES2_U002c0-512MB-85-220-0-0.png/460x0w.webp"
+                    src="https://is5-ssl.mzstatic.com/image/thumb/Purple126/v4/a2/1c/2d/a21c2d3f-6c0c-9a86-a76d-e43dd1f6616c/AppIcon-0-0-1x_U007emarketing-0-0-0-6-0-0-sRGB-0-0-0-GLES2_U002c0-512MB-85-220-0-0.png/460x0w.webp"
                     alt="Peekaboo Barn App"
                     className="absolute inset-0 w-full h-full object-cover"
                   />

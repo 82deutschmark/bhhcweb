@@ -18,7 +18,8 @@ const leaders = [
     name: "Brianne Baker",
     role: "Chief Creative Officer (CCO)",
     description: "Heads our creative efforts, user experience, and product design—particularly around the Peekaboo Studio brand. She ensures our apps maintain a distinctive visual identity and delivers engaging user experiences.",
-    linkedin: "https://www.linkedin.com/in/briannebaker"
+    linkedin: "https://www.linkedin.com/in/briannebaker",
+    image: "https://cdn.midjourney.com/d6c48f7e-0a5e-41fc-83f0-aba0dcc4c4cc/0_3.png"
   },
   {
     name: "Eric Dickinson",
