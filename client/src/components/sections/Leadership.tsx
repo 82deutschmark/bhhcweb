@@ -33,25 +33,27 @@ export default function Leadership() {
     <section id="leadership" className="py-24 bg-gradient-to-b from-gray-50 to-white">
       <div className="container mx-auto px-4">
         <h2 className="text-4xl font-bold mb-12 text-center">Leadership & Partners</h2>
-        <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
+        <div className="grid grid-cols-1 lg:grid-cols-2 gap-8">
           {leaders.map((leader) => (
             <Card key={leader.name} className="overflow-hidden hover:shadow-lg transition-shadow duration-300">
               <CardContent className="p-6">
-                <div className="flex flex-col md:flex-row gap-6">
+                <div className="flex flex-col md:flex-row gap-8">
                   {leader.image && (
-                    <div className="md:w-1/3">
-                      <img
-                        src={leader.image}
-                        alt={leader.name}
-                        className="w-full h-48 object-cover rounded-lg shadow-md"
-                      />
+                    <div className="md:w-2/5">
+                      <div className="aspect-[2/3] relative">
+                        <img
+                          src={leader.image}
+                          alt={leader.name}
+                          className="absolute inset-0 w-full h-full object-cover rounded-lg shadow-md"
+                        />
+                      </div>
                     </div>
                   )}
-                  <div className={`${leader.image ? 'md:w-2/3' : 'w-full'}`}>
+                  <div className={`${leader.image ? 'md:w-3/5' : 'w-full'}`}>
                     <div className="flex justify-between items-start mb-4">
                       <div>
                         <h3 className="text-2xl font-bold text-primary">{leader.name}</h3>
-                        <p className="text-sm font-medium text-gray-600 mt-1">{leader.role}</p>
+                        <p className="text-sm font-medium text-gray-600 mt-2">{leader.role}</p>
                       </div>
                       {leader.linkedin && (
                         <a
@@ -64,7 +66,7 @@ export default function Leadership() {
                         </a>
                       )}
                     </div>
-                    <p className="text-gray-600 leading-relaxed">{leader.description}</p>
+                    <p className="text-gray-600 leading-relaxed mt-4">{leader.description}</p>
                   </div>
                 </div>
               </CardContent>
