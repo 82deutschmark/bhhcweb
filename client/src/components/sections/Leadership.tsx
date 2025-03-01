@@ -26,7 +26,7 @@ const leaders = [
     name: "Eric Dickinson",
     role: "General Counsel",
     description: "Eric Dickinson continues to make significant contributions at Google, where he serves full-time as Senior Product Counsel for Google Maps. As a longtime friend and trusted advisor, his extensive legal and regulatory expertise—honed through advising on complex product launches—plays a vital role in shaping our strategic decisions.",
-    image: "https://cdn.midjourney.com/ff85cbce-6077-4e41-801e-01da3bb10cb5/0_3.png"
+    image: "/images/eric-dickinson.png"
   },
 ];
 
