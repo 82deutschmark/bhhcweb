@@ -21,6 +21,7 @@ const ReviewCard = ({ text }: { text: string }) => (
 export default function Portfolio() {
   const appStoreUrl = "https://apps.apple.com/us/app/peekaboo-barn/id300590611";
   const websiteUrl = "https://www.peekaboobarn.com";
+  const briannePortfolioUrl = "https://www.brianne.work/";
 
   return (
     <section
@@ -41,7 +42,15 @@ export default function Portfolio() {
                       Peekaboo Barn
                     </h3>
                     <p className="text-gray-600 text-lg italic">
-                      Designed by legendary artist and developer Brianne Baker
+                      Designed by legendary artist and developer{" "}
+                      <a
+                        href={briannePortfolioUrl}
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        className="hover:text-primary transition-colors"
+                      >
+                        Brianne Baker
+                      </a>
                     </p>
                   </header>
                   <div className="flex items-center mb-6 space-x-4">
