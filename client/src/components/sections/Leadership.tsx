@@ -11,7 +11,7 @@ const leaders = [
   {
     name: "Mark Barney",
     role: "Chief Technology Officer (CTO)",
-    description: "Directs the technological vision of Big Happy Holding Company, focusing on product development and platform integrity across our diverse portfolio of mobile apps.",
+    description: "Mark Barney is a seasoned gaming executive with over a decade of experience scaling and monetizing live-service games, including *Stronghold Kingdoms*, which he helped grow to over a million monthly active users. As a pioneer in cross-platform integration, in-app monetization, and long-tail revenue strategies, he has a proven track record of sustaining profitable and player-friendly economies through ethical monetization. Combining operational expertise with a deep understanding of player psychology, he brings invaluable practical know-how to direct the technological vision of Big Happy Holding Company, focusing on product development and platform integrity across our diverse portfolio of mobile apps.",
     image: "https://cdn.midjourney.com/635529cd-51ec-49d1-a520-1b5d91a92e99/0_2.png"
   },
   {
@@ -26,7 +26,7 @@ const leaders = [
     name: "Eric Dickinson",
     role: "General Counsel",
     description: "Eric Dickinson continues to make significant contributions at Google, where he serves full-time as Senior Product Counsel for Google Maps. As a longtime friend and trusted advisor, his extensive legal and regulatory expertise—honed through advising on complex product launches—plays a vital role in shaping our strategic decisions.",
-    image: "https://cdn.midjourney.com/635529cd-51ec-49d1-a520-1b5d91a92e99/0_1.png"
+    image: "https://cdn.midjourney.com/ff85cbce-6077-4e41-801e-01da3bb10cb5/0_3.png"
   },
 ];
 
