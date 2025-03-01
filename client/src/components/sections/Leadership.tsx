@@ -6,7 +6,7 @@ const leaders = [
     name: "Andreas Vagelatos",
     role: "Chief Executive Officer (CEO) & Chief Financial Officer (CFO)",
     description: "Andreas Vagelatos is a proven entrepreneur whose ventures have attracted major industry attention. He founded Aerserv, acquired by InMobi, and Aerify, bought by Amazon's Sizmek, underscoring his ability to create companies with significant market value. Beyond these successful exits, he has demonstrated expertise in growing and scaling tech startups, notably through his roles as Venture Lead/EIR at Citigroup's Commercial Bank Accelerator and as a Venture Partner at Banyan Ventures.",
-    image: "https://cdn.midjourney.com/1997c3fd-9161-41a8-ae8a-6754dc446f67/0_0.png"
+    image: "https://cdn.midjourney.com/2981fc58-a34d-469e-a494-3103e7fa7843/0_2.png"
   },
   {
     name: "Mark Barney",
@@ -20,7 +20,7 @@ const leaders = [
     description: "Brianne Baker leads the creative vision for the Peekaboo Interactive Games brand, blending innovative design with engaging gameplay to craft standout interactive experiences.",
     linkedin: "https://www.linkedin.com/in/briannebaker",
     portfolio: "https://www.brianne.work/",
-    image: "https://cdn.midjourney.com/a47ddc91-2bc6-4eea-a7bf-51f77e092412/0_2.png" //Updated Image URL
+    image: "https://cdn.midjourney.com/a47ddc91-2bc6-4eea-a7bf-51f77e092412/0_2.png" 
   },
   {
     name: "Eric Dickinson",
