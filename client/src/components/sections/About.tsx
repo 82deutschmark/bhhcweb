@@ -21,7 +21,7 @@ export default function About() {
   ];
 
   return (
-    <section id="about" className="py-24 content-container section-transition">
+    <section id="about" className="py-16 content-container section-transition">
       <div className="container mx-auto px-4">
         <div className="flex justify-center mb-8">
           <img src="/images/logo-background.png" alt="Company Logo" className="max-w-xs mx-auto" />
