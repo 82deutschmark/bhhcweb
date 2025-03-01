@@ -5,7 +5,7 @@ const leaders = [
   {
     name: "Andreas Vagelatos",
     role: "Chief Executive Officer (CEO) & Chief Financial Officer (CFO)",
-    description: "A proven entrepreneur with multiple successful exits, including Aerserv (acquired by InMobi) and Aerify (acquired by Amazon's Sizmek). His expertise in growing and scaling tech startups is further demonstrated through roles as Venture Lead/EIR at Citigroup's Commercial Bank Accelerator and as a Venture Partner at Banyan Ventures.",
+    description: "Andreas Vagelatos is a proven entrepreneur whose ventures have attracted major industry attention. He founded Aerserv, acquired by InMobi, and Aerify, bought by Amazon's Sizmek, underscoring his ability to create companies with significant market value. Beyond these successful exits, he has demonstrated expertise in growing and scaling tech startups, notably through his roles as Venture Lead/EIR at Citigroup's Commercial Bank Accelerator and as a Venture Partner at Banyan Ventures.",
     image: "https://cdn.midjourney.com/1997c3fd-9161-41a8-ae8a-6754dc446f67/0_0.png"
   },
   {
@@ -17,7 +17,7 @@ const leaders = [
   {
     name: "Brianne Baker",
     role: "Chief Creative Officer (CCO)",
-    description: "Leads the creative vision for the Peekaboo Interactive Games brand, blending innovative design with engaging gameplay to craft standout interactive experiences. Her expertise in user experience and product design ensures our applications maintain a distinctive visual identity while delivering compelling user engagement.",
+    description: "Brianne Baker leads the creative vision for the Peekaboo Interactive Games brand, blending innovative design with engaging gameplay to craft standout interactive experiences.",
     linkedin: "https://www.linkedin.com/in/briannebaker",
     portfolio: "https://www.brianne.work/",
     image: "https://cdn.midjourney.com/d6c48f7e-0a5e-41fc-83f0-aba0dcc4c4cc/0_3.png"
@@ -25,7 +25,7 @@ const leaders = [
   {
     name: "Eric Dickinson",
     role: "General Counsel",
-    description: "Currently serving as Senior Product Counsel for Google Maps, Eric brings extensive legal and regulatory experience to our team. His expertise in advising on complex product launches plays a key role in guiding our strategic decisions while maintaining his full-time position at Google.",
+    description: "While Eric Dickinson continues his influential work full time at Google as Senior Product Counsel for Google Maps.  as a longtime friend we appreciate his extensive legal and regulatory experience—developed through advising on complex product launches and it plays a key role in guiding our strategic decisions.",
     image: "https://cdn.midjourney.com/635529cd-51ec-49d1-a520-1b5d91a92e99/0_1.png"
   },
 ];
