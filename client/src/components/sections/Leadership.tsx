@@ -17,7 +17,7 @@ const leaders = [
   {
     name: "Brianne Baker",
     role: "Chief Creative Officer (CCO)",
-    description: "Brianne Baker leads the creative vision for the Peekaboo Interactive Games brand, blending innovative design with engaging gameplay to craft standout interactive experiences.",
+    description: "Brianne Baker leads the creative vision for the Peekaboo Interactive Games brand, blending innovative design with engaging gameplay to craft standout interactive experiences. She is a seasoned UX and visual designer with a strong focus on educational technologies and interactive design. She has made significant contributions to children's educational applications, collaborating with major brands such as Mattel, AT&T/WarnerMedia, and others. Brianne co-founded Kinsome, a digital platform aimed at strengthening bonds between grandparents and grandchildren. Throughout her career, Brianne has designed over 100 published apps and experiences, with her work amassing over 5 million downloads. Her passion for educational and emerging technologies continues to drive her work in creating meaningful digital experiences that bridge generational gaps and foster learning.",
     linkedin: "https://www.linkedin.com/in/briannebaker",
     portfolio: "https://www.brianne.work/",
     image: "https://cdn.midjourney.com/a47ddc91-2bc6-4eea-a7bf-51f77e092412/0_2.png" 
