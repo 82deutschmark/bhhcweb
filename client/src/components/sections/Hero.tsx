@@ -3,10 +3,10 @@ import React from 'react';
 
 export default function Hero() {
   return (
-    <section className="relative py-32 md:py-48 bg-gradient-to-br from-primary/10 via-background to-background overflow-hidden">
+    <section className="relative py-20 md:py-36 bg-gradient-to-br from-primary/10 via-background to-background overflow-hidden">
       <div className="container mx-auto px-4">
         <div className="max-w-4xl mx-auto text-center">
-          <h1 className="text-xl md:text-2xl font-bold tracking-tight mb-6 bg-gradient-to-r from-primary to-primary/70 bg-clip-text text-transparent">
+          <h1 className="text-2xl md:text-3xl font-bold tracking-tight mb-6 bg-gradient-to-r from-primary to-primary/70 bg-clip-text text-transparent">
             Big Happy Holding Company
           </h1>
           <div className="mb-8">
