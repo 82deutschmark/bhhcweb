@@ -1,11 +1,18 @@
+
+import React from 'react';
+
 export default function Hero() {
   return (
     <section className="relative py-32 md:py-48 bg-gradient-to-br from-primary/10 via-background to-background overflow-hidden">
       <div className="container mx-auto px-4">
         <div className="max-w-4xl mx-auto text-center">
-          <h1 className="text-5xl md:text-7xl font-bold tracking-tight mb-8 bg-gradient-to-r from-primary to-primary/70 bg-clip-text text-transparent">
-            Big Happy Holding Company
-          </h1>
+          <div className="mb-8">
+            <img 
+              src="/images/header-image.png" 
+              alt="Big Happy Holding Company" 
+              className="max-w-full mx-auto"
+            />
+          </div>
           <p className="text-xl md:text-2xl text-muted-foreground mb-12 leading-relaxed">
             Driving innovative digital solutions and sustainable value creation through strategic investments in mobile software and gaming applications.
           </p>
