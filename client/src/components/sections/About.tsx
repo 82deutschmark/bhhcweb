@@ -21,8 +21,11 @@ export default function About() {
   ];
 
   return (
-    <section id="about" className="py-24 bg-no-repeat bg-cover content-container section-transition" style={{backgroundImage: `url('/images/logo.png')`}}> {/* Added background image */}
+    <section id="about" className="py-24 content-container section-transition">
       <div className="container mx-auto px-4">
+        <div className="flex justify-center mb-8">
+          <img src="/images/logo-background.png" alt="Company Logo" className="max-w-xs mx-auto" />
+        </div>
         <div className="text-center mb-16">
           <h2 className="text-4xl font-bold mb-4 text-primary">About Us</h2>
           <div className="w-24 h-1 bg-primary mx-auto mb-8 rounded-full"></div>

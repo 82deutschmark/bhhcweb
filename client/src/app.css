@@ -1,11 +1,6 @@
 
-/* Add the background image to the page */
+/* Basic body styling without background image */
 body {
-  background-image: url('/images/logo-background.png');
-  background-size: contain;
-  background-repeat: no-repeat;
-  background-position: center;
-  background-attachment: fixed;
   background-color: #f5f5f5;
 }
 
