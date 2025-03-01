@@ -53,33 +53,33 @@ a, button {
  
 @layer base {
   :root {
-    --background: 40 30% 98%;
-    --foreground: 210 80% 15%;
+    --background: 0 0% 100%;
+    --foreground: 222.2 84% 4.9%;
     --card: 0 0% 100%;
-    --card-foreground: 210 80% 15%;
+    --card-foreground: 222.2 84% 4.9%;
     --popover: 0 0% 100%;
-    --popover-foreground: 210 80% 15%;
-    --primary: 30 80% 50%;
-    --primary-foreground: 0 0% 100%;
-    --secondary: 270 50% 60%;
-    --secondary-foreground: 0 0% 100%;
-    --muted: 30 30% 96%;
-    --muted-foreground: 215 25% 40%;
-    --accent: 210 70% 15%;
-    --accent-foreground: 0 0% 100%;
+    --popover-foreground: 222.2 84% 4.9%;
+    --primary: 215 70% 40%;
+    --primary-foreground: 210 40% 98%;
+    --secondary: 210 40% 96.1%;
+    --secondary-foreground: 222.2 47.4% 11.2%;
+    --muted: 210 40% 96.1%;
+    --muted-foreground: 215.4 16.3% 46.9%;
+    --accent: 210 40% 96.1%;
+    --accent-foreground: 222.2 47.4% 11.2%;
     --destructive: 0 84.2% 60.2%;
     --destructive-foreground: 210 40% 98%;
-    --border: 30 30% 90%;
-    --input: 30 30% 90%;
-    --ring: 30 80% 50%;
+    --border: 214.3 31.8% 91.4%;
+    --input: 214.3 31.8% 91.4%;
+    --ring: 215 70% 40%;
     --radius: 0.5rem;
     
     /* Chart colors */
-    --chart-1: 30 80% 50%;
-    --chart-2: 270 50% 60%;
-    --chart-3: 210 70% 20%;
-    --chart-4: 35 90% 55%;
-    --chart-5: 290 60% 50%;
+    --chart-1: 215 70% 40%;
+    --chart-2: 215 70% 60%;
+    --chart-3: 195 70% 50%;
+    --chart-4: 245 70% 50%;
+    --chart-5: 155 70% 50%;
     
     /* Sidebar colors */
     --sidebar-background: 224 71% 4%;
@@ -97,91 +97,6 @@ a, button {
     --foreground: 210 40% 98%;
     --card: 222.2 84% 4.9%;
     --card-foreground: 210 40% 98%;
-
-/* Custom styles inspired by logo */
-.fruit-gradient {
-  background: linear-gradient(135deg, 
-    hsl(var(--primary) / 0.1),
-    hsl(var(--secondary) / 0.1),
-    hsl(var(--secondary) / 0.05),
-    hsl(var(--primary) / 0.1)
-  );
-}
-
-.leaf-pattern::before {
-  content: '';
-  position: absolute;
-  top: 0;
-  left: 0;
-  right: 0;
-  bottom: 0;
-  background-image: url("data:image/svg+xml,%3Csvg width='60' height='60' viewBox='0 0 60 60' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M30 20C35 20 35 30 40 30S45 20 50 20 55 30 60 30V0H0V30C5 30 10 20 15 20S25 30 30 30C25 30 25 20 20 20S15 30 10 30 5 20 0 20V60H60V20C55 20 50 30 45 30S35 20 30 20' fill='%23123456' fill-opacity='0.03'/%3E%3C/svg%3E");
-  z-index: -1;
-}
-
-.glow-card {
-  position: relative;
-  background: white;
-  border-radius: var(--radius);
-  overflow: hidden;
-}
-
-.glow-card::after {
-  content: '';
-  position: absolute;
-  inset: 0;
-  padding: 1px;
-  border-radius: inherit;
-  background: linear-gradient(
-    135deg,
-    hsl(var(--primary) / 0.5),
-    hsl(var(--secondary) / 0.5),
-    hsl(var(--accent) / 0.5)
-  );
-  -webkit-mask: 
-    linear-gradient(#fff 0 0) content-box, 
-    linear-gradient(#fff 0 0);
-  -webkit-mask-composite: xor;
-  mask-composite: exclude;
-  opacity: 0;
-  transition: opacity 0.3s ease;
-}
-
-.glow-card:hover::after {
-  opacity: 1;
-}
-
-/* Button styles */
-.btn-primary {
-  @apply bg-primary text-primary-foreground hover:bg-primary/90 inline-flex items-center justify-center rounded-md text-sm font-medium transition-colors focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2 disabled:opacity-50 disabled:pointer-events-none ring-offset-background;
-}
-
-.btn-secondary {
-  @apply bg-secondary text-secondary-foreground hover:bg-secondary/90 inline-flex items-center justify-center rounded-md text-sm font-medium transition-colors focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2 disabled:opacity-50 disabled:pointer-events-none ring-offset-background;
-}
-
-.btn-accent {
-  @apply bg-accent text-accent-foreground hover:bg-accent/90 inline-flex items-center justify-center rounded-md text-sm font-medium transition-colors focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2 disabled:opacity-50 disabled:pointer-events-none ring-offset-background;
-}
-
-.fancy-border {
-  position: relative;
-}
-
-.fancy-border::after {
-  content: '';
-  position: absolute;
-  left: 0;
-  right: 0;
-  bottom: -1px;
-  height: 3px;
-  background: linear-gradient(90deg, 
-    hsl(var(--primary)),
-    hsl(var(--secondary))
-  );
-  border-radius: 3px;
-}
-
     --popover: 222.2 84% 4.9%;
     --popover-foreground: 210 40% 98%;
     --primary: 215 70% 40%;

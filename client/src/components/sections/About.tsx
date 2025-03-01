@@ -21,11 +21,12 @@ export default function About() {
   ];
 
   return (
-    <section id="about" className="py-24 fruit-gradient leaf-pattern relative section-transition">
+    <section id="about" className="py-24 bg-gradient-to-b from-white to-gray-50 section-transition">
       <div className="container mx-auto px-4">
         <div className="text-center mb-16">
-          <h2 className="text-4xl font-bold mb-4 text-accent fancy-border inline-block pb-2">About Us</h2>
-          <div className="max-w-3xl mx-auto mt-8">
+          <h2 className="text-4xl font-bold mb-4 text-primary">About Us</h2>
+          <div className="w-24 h-1 bg-primary mx-auto mb-8 rounded-full"></div>
+          <div className="max-w-3xl mx-auto">
             <p className="text-lg text-muted-foreground leading-relaxed">
               Big Happy Holding Company is a private investment and operating firm dedicated to acquiring, developing, and distributing mobile software applications. Our mission is to cultivate a diverse, growth-oriented portfolio that leverages innovative technology, creative vision, and operational excellence to deliver meaningful returns for our partners.
             </p>
@@ -34,14 +35,10 @@ export default function About() {
 
         <div className="grid md:grid-cols-3 gap-8">
           {approaches.map((approach) => (
-            <Card key={approach.title} className="glow-card hover-lift">
+            <Card key={approach.title} className="hover-card border-t-4 border-t-primary">
               <CardContent className="pt-6">
-                <div className="flex items-center mb-4">
-                  <div className="p-3 rounded-full bg-primary/10 mr-3">
-                    <approach.icon className="h-7 w-7 text-primary" />
-                  </div>
-                  <h3 className="text-xl font-bold">{approach.title}</h3>
-                </div>
+                <approach.icon className="h-12 w-12 text-primary mb-4" />
+                <h3 className="text-xl font-bold mb-3">{approach.title}</h3>
                 <p className="text-muted-foreground">{approach.description}</p>
               </CardContent>
             </Card>
