@@ -6,13 +6,13 @@ const leaders = [
     name: "Andreas Vagelatos",
     role: "Chief Executive Officer (CEO) & Chief Financial Officer (CFO)",
     description: "Andreas Vagelatos is a proven entrepreneur whose ventures have attracted major industry attention. He founded Aerserv, acquired by InMobi, and Aerify, bought by Amazon's Sizmek, underscoring his ability to create companies with significant market value. Beyond these successful exits, he has demonstrated expertise in growing and scaling tech startups, notably through his roles as Venture Lead/EIR at Citigroup's Commercial Bank Accelerator and as a Venture Partner at Banyan Ventures.",
-    image: "https://cdn.midjourney.com/2981fc58-a34d-469e-a494-3103e7fa7843/0_2.png"
+    image: "/images/andreas-vagelatos.png"
   },
   {
     name: "Mark Barney",
     role: "Chief Technology Officer (CTO)",
     description: "Mark Barney is a seasoned gaming executive with over a decade of experience scaling and monetizing live-service games, including *Stronghold Kingdoms*, which he helped grow to over a million monthly active users. As a pioneer in cross-platform integration, in-app monetization, and long-tail revenue strategies, he has a proven track record of sustaining profitable and player-friendly economies through ethical monetization. Combining operational expertise with a deep understanding of player psychology, he brings invaluable practical know-how to direct the technological vision of Big Happy Holding Company, focusing on product development and platform integrity across our diverse portfolio of mobile apps.",
-    image: "https://cdn.midjourney.com/635529cd-51ec-49d1-a520-1b5d91a92e99/0_2.png"
+    image: "/images/mark-barney.png"
   },
   {
     name: "Brianne Baker",
