@@ -4,6 +4,18 @@ import { Menu } from "lucide-react";
 import { Button } from "@/components/ui/button";
 import { Sheet, SheetContent, SheetTrigger } from "@/components/ui/sheet";
 
+// Placeholder Logo component - replace with your actual component
+const Logo = ({ size }) => {
+  return (
+    <img
+      src="/logo.png" // Replace with the actual path to your logo
+      alt="BHHC Logo"
+      style={{ height: size === "sm" ? "30px" : "50px" }}
+    />
+  );
+};
+
+
 const NavBar = () => {
   const [isOpen, setIsOpen] = useState(false);
 
@@ -18,7 +30,7 @@ const NavBar = () => {
     <nav className="fixed w-full bg-background/95 backdrop-blur supports-[backdrop-filter]:bg-background/60 z-50 border-b">
       <div className="container mx-auto px-4 h-16 flex items-center justify-between">
         <Link href="/">
-          <span className="font-bold text-xl cursor-pointer">BHHC</span>
+          <Logo size="sm" /> {/* Added Logo */}
         </Link>
 
         {/* Desktop Navigation */}
