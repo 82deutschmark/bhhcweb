@@ -28,7 +28,7 @@ export default function Portfolio() {
       id="portfolio"
       className="py-32 bg-gradient-to-br from-gray-50 via-white to-gray-50"
     >
-      <div className="container mx-auto px-4">
+      <div className="container mx-auto px-4 content-container"> {/* Added content-container class here */}
         <h2 className="text-4xl font-bold mb-16 text-center">
           Featured Portfolio
         </h2>

@@ -5,6 +5,7 @@ import { Toaster } from "@/components/ui/toaster";
 import NotFound from "@/pages/not-found";
 import Home from "@/pages/Home";
 import NavBar from "@/components/layout/NavBar";
+import './app.css'; //This line is added as per the change request
 
 function Router() {
   return (

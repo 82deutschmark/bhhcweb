@@ -21,7 +21,7 @@ export default function About() {
   ];
 
   return (
-    <section id="about" className="py-24 bg-gradient-to-b from-white to-gray-50 section-transition">
+    <section id="about" className="py-24 bg-no-repeat bg-cover content-container section-transition" style={{backgroundImage: `url('/images/logo.png')`}}> {/* Added background image */}
       <div className="container mx-auto px-4">
         <div className="text-center mb-16">
           <h2 className="text-4xl font-bold mb-4 text-primary">About Us</h2>
@@ -35,7 +35,7 @@ export default function About() {
 
         <div className="grid md:grid-cols-3 gap-8">
           {approaches.map((approach) => (
-            <Card key={approach.title} className="hover-card border-t-4 border-t-primary">
+            <Card key={approach.title} className="hover-card border-t-4 border-t-primary content-container"> {/* Added content-container */}
               <CardContent className="pt-6">
                 <approach.icon className="h-12 w-12 text-primary mb-4" />
                 <h3 className="text-xl font-bold mb-3">{approach.title}</h3>

@@ -20,7 +20,7 @@ const leaders = [
     description: "Brianne Baker leads the creative vision for the Peekaboo Interactive Games brand, blending innovative design with engaging gameplay to craft standout interactive experiences.",
     linkedin: "https://www.linkedin.com/in/briannebaker",
     portfolio: "https://www.brianne.work/",
-    image: "https://cdn.midjourney.com/d6c48f7e-0a5e-41fc-83f0-aba0dcc4c4cc/0_3.png"
+    image: "https://cdn.midjourney.com/a47ddc91-2bc6-4eea-a7bf-51f77e092412/0_2.png" //Updated Image URL
   },
   {
     name: "Eric Dickinson",
