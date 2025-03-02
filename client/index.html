@@ -33,11 +33,9 @@
           // Example: load analytics or other third-party scripts
           // loadAnalytics();
         } else {
-          // Redirect to privacy policy if consent is declined
-          if (window.location.pathname !== '/cookie-policy.html' && 
-              window.location.pathname !== '/privacy-policy.html') {
-            window.location.href = '/cookie-policy.html';
-          }
+          // Only check consent status during initialization
+          // We won't redirect here to prevent redirecting when page first loads
+          console.log('Consent not granted during initialization');
         }
       }
       
@@ -74,7 +72,21 @@
             // Handle consent status changes
             const hasConsented = this.hasConsented();
             console.log(hasConsented ? 'Consent accepted' : 'Consent declined');
-            handleConsentDependentScripts(hasConsented);
+            
+            // Only redirect if consent is declined, stay on page if accepted
+            if (hasConsented) {
+              window.cookieConsentGranted = true;
+              // Load non-essential scripts if needed
+              console.log('Loading non-essential scripts after consent');
+              // Example: load analytics or other third-party scripts
+              // loadAnalytics();
+            } else {
+              // Only redirect to policy page if consent is declined
+              if (window.location.pathname !== '/cookie-policy.html' && 
+                  window.location.pathname !== '/privacy-policy.html') {
+                window.location.href = '/cookie-policy.html';
+              }
+            }
           }
         });
       });
