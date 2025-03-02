@@ -13,12 +13,34 @@
     <meta property="og:url" content="/" />
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/cookieconsent@3/build/cookieconsent.min.css">
+    <script src="/js/cookie-consent.js"></script>
   </head>
   <body>
     <div id="root"></div>
     <script type="module" src="/src/main.tsx"></script>
     <script src="https://cdn.jsdelivr.net/npm/cookieconsent@3/build/cookieconsent.min.js"></script>
     <script>
+      // Define a global variable to track consent status
+      window.cookieConsentGranted = false;
+      
+      // Function to handle consent-dependent scripts
+      function handleConsentDependentScripts(hasConsented) {
+        window.cookieConsentGranted = hasConsented;
+        
+        if (hasConsented) {
+          // Initialize non-essential scripts here
+          console.log('Loading non-essential scripts after consent');
+          // Example: load analytics or other third-party scripts
+          // loadAnalytics();
+        } else {
+          // Redirect to privacy policy if consent is declined
+          if (window.location.pathname !== '/cookie-policy.html' && 
+              window.location.pathname !== '/privacy-policy.html') {
+            window.location.href = '/cookie-policy.html';
+          }
+        }
+      }
+      
       window.addEventListener('load', function() {
         window.cookieconsent.initialise({
           palette: {
@@ -43,8 +65,16 @@
           },
           type: "opt-in",
           revokable: true,
+          onInitialise: function(status) {
+            // Check consent status when consent widget initializes
+            const hasConsented = this.hasConsented();
+            handleConsentDependentScripts(hasConsented);
+          },
           onStatusChange: function(status) {
-            console.log(this.hasConsented() ? 'Consent accepted' : 'Consent declined');
+            // Handle consent status changes
+            const hasConsented = this.hasConsented();
+            console.log(hasConsented ? 'Consent accepted' : 'Consent declined');
+            handleConsentDependentScripts(hasConsented);
           }
         });
       });

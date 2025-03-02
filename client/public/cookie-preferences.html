@@ -1,0 +1,260 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Cookie Preferences | Big Happy Holding Company</title>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/cookieconsent@3/build/cookieconsent.min.css">
+  <script src="https://cdn.jsdelivr.net/npm/cookieconsent@3/build/cookieconsent.min.js"></script>
+  <script src="/js/cookie-consent.js"></script>
+  <style>
+    body {
+      font-family: 'Inter', sans-serif;
+      line-height: 1.6;
+      color: #333;
+      max-width: 900px;
+      margin: 0 auto;
+      padding: 2rem;
+    }
+    h1 {
+      text-align: center;
+      margin-bottom: 2rem;
+    }
+    h2, h3 {
+      margin-top: 2rem;
+    }
+    .cookie-category {
+      border: 1px solid #ddd;
+      border-radius: 0.5rem;
+      padding: 1rem;
+      margin-bottom: 1rem;
+    }
+    .cookie-toggle {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
+    .switch {
+      position: relative;
+      display: inline-block;
+      width: 60px;
+      height: 34px;
+    }
+    .switch input {
+      opacity: 0;
+      width: 0;
+      height: 0;
+    }
+    .slider {
+      position: absolute;
+      cursor: pointer;
+      top: 0;
+      left: 0;
+      right: 0;
+      bottom: 0;
+      background-color: #ccc;
+      transition: .4s;
+      border-radius: 34px;
+    }
+    .slider:before {
+      position: absolute;
+      content: "";
+      height: 26px;
+      width: 26px;
+      left: 4px;
+      bottom: 4px;
+      background-color: white;
+      transition: .4s;
+      border-radius: 50%;
+    }
+    input:checked + .slider {
+      background-color: hsl(215, 70%, 40%);
+    }
+    input:checked + .slider:before {
+      transform: translateX(26px);
+    }
+    .buttons {
+      display: flex;
+      justify-content: center;
+      gap: 1rem;
+      margin-top: 2rem;
+    }
+    .btn {
+      padding: 0.5rem 1rem;
+      background-color: hsl(215, 70%, 40%);
+      color: white;
+      text-decoration: none;
+      border-radius: 0.5rem;
+      border: none;
+      cursor: pointer;
+      font-size: 1rem;
+    }
+    .btn-secondary {
+      background-color: #f8f9fa;
+      color: #333;
+      border: 1px solid #ddd;
+    }
+    .btn:hover {
+      background-color: hsl(215, 70%, 35%);
+    }
+    .btn-secondary:hover {
+      background-color: #e9ecef;
+    }
+    a {
+      color: hsl(215, 70%, 40%);
+    }
+    .back-link {
+      display: inline-block;
+      margin-top: 2rem;
+      padding: 0.5rem 1rem;
+      background-color: hsl(215, 70%, 40%);
+      color: white;
+      text-decoration: none;
+      border-radius: 0.5rem;
+    }
+    .back-link:hover {
+      background-color: hsl(215, 70%, 35%);
+    }
+  </style>
+</head>
+<body>
+  <h1>Cookie Preferences</h1>
+  <p>Manage your cookie preferences for Big Happy Holding Company. You can choose which types of cookies you allow us to use on our website.</p>
+  
+  <div class="cookie-category">
+    <div class="cookie-toggle">
+      <div>
+        <h3>Strictly Necessary Cookies</h3>
+        <p>These cookies are essential for the website to function properly and cannot be disabled.</p>
+      </div>
+      <label class="switch">
+        <input type="checkbox" checked disabled>
+        <span class="slider"></span>
+      </label>
+    </div>
+  </div>
+  
+  <div class="cookie-category">
+    <div class="cookie-toggle">
+      <div>
+        <h3>Performance Cookies</h3>
+        <p>These cookies help us understand how visitors interact with our website, which helps us improve the functionality and performance of our services.</p>
+      </div>
+      <label class="switch">
+        <input type="checkbox" id="performance-cookies">
+        <span class="slider"></span>
+      </label>
+    </div>
+  </div>
+  
+  <div class="cookie-category">
+    <div class="cookie-toggle">
+      <div>
+        <h3>Functionality Cookies</h3>
+        <p>These cookies remember choices you make and provide enhanced, personalized features.</p>
+      </div>
+      <label class="switch">
+        <input type="checkbox" id="functionality-cookies">
+        <span class="slider"></span>
+      </label>
+    </div>
+  </div>
+  
+  <div class="cookie-category">
+    <div class="cookie-toggle">
+      <div>
+        <h3>Targeting or Advertising Cookies</h3>
+        <p>These cookies deliver content that is more relevant to you and your interests and measure the effectiveness of our advertising campaigns.</p>
+      </div>
+      <label class="switch">
+        <input type="checkbox" id="advertising-cookies">
+        <span class="slider"></span>
+      </label>
+    </div>
+  </div>
+  
+  <div class="buttons">
+    <button id="save-preferences" class="btn">Save Preferences</button>
+    <button id="accept-all" class="btn">Accept All</button>
+    <button id="reject-all" class="btn btn-secondary">Reject All</button>
+  </div>
+  
+  <p>For more information about how we use cookies, please view our <a href="/cookie-policy.html">Cookie Policy</a>.</p>
+  
+  <a href="/" class="back-link">Back to Homepage</a>
+  
+  <script>
+    document.addEventListener('DOMContentLoaded', function() {
+      // Get cookie consent status
+      const hasConsented = window.cookieConsent && window.cookieConsent.hasConsented();
+      
+      // Set toggle states based on current consent
+      document.getElementById('performance-cookies').checked = hasConsented;
+      document.getElementById('functionality-cookies').checked = hasConsented;
+      document.getElementById('advertising-cookies').checked = hasConsented;
+      
+      // Save preferences button
+      document.getElementById('save-preferences').addEventListener('click', function() {
+        const performanceConsent = document.getElementById('performance-cookies').checked;
+        const functionalityConsent = document.getElementById('functionality-cookies').checked;
+        const advertisingConsent = document.getElementById('advertising-cookies').checked;
+        
+        // If any category is consented, we consider it as overall consent
+        const overallConsent = performanceConsent || functionalityConsent || advertisingConsent;
+        
+        // Update consent status
+        var event = new CustomEvent('cookieConsent.setStatus', {
+          detail: { consented: overallConsent }
+        });
+        document.dispatchEvent(event);
+        
+        // Simulate cookieconsent status change
+        document.cookie = `cookieconsent_status=${overallConsent ? 'allow' : 'deny'}; path=/; max-age=31536000`;
+        window.cookieConsentGranted = overallConsent;
+        
+        if (!overallConsent) {
+          // Revoke cookies if no consent
+          window.cookieConsent.revokeNonEssentialCookies();
+        }
+        
+        alert('Your preferences have been saved.');
+        window.location.href = '/';
+      });
+      
+      // Accept all button
+      document.getElementById('accept-all').addEventListener('click', function() {
+        document.getElementById('performance-cookies').checked = true;
+        document.getElementById('functionality-cookies').checked = true;
+        document.getElementById('advertising-cookies').checked = true;
+        
+        // Update consent status
+        document.cookie = `cookieconsent_status=allow; path=/; max-age=31536000`;
+        window.cookieConsentGranted = true;
+        
+        alert('All cookies accepted.');
+        window.location.href = '/';
+      });
+      
+      // Reject all button
+      document.getElementById('reject-all').addEventListener('click', function() {
+        document.getElementById('performance-cookies').checked = false;
+        document.getElementById('functionality-cookies').checked = false;
+        document.getElementById('advertising-cookies').checked = false;
+        
+        // Update consent status
+        document.cookie = `cookieconsent_status=deny; path=/; max-age=31536000`;
+        window.cookieConsentGranted = false;
+        
+        // Revoke cookies
+        window.cookieConsent.revokeNonEssentialCookies();
+        
+        alert('All non-essential cookies rejected.');
+        window.location.href = '/cookie-policy.html';
+      });
+    });
+  </script>
+</body>
+</html>
