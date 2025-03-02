@@ -1,0 +1,107 @@
+Privacy Policy for Big Happy Holding Company and Subsidiaries
+Effective Date: March 1, 2025
+1. INTRODUCTION
+This Privacy Policy (“Policy”) explains how Big Happy Holding Company and its subsidiaries (“Big Happy,” “we,” “our,” or “us”) collect, use, disclose, and protect your personal data in compliance with applicable data protection laws—including the GDPR, the California Consumer Privacy Act (CCPA), and the Children’s Online Privacy Protection Act (COPPA). By using our services, you consent to the practices described herein.
+
+If you believe your data has been processed unlawfully, you have the right to lodge a complaint with your local data protection authority.
+2. DATA WE COLLECT
+2.1. Categories of Data Collected (Tied to Parents Only):
+We do not collect any personal data from children. The data we collect—if any—is tied to the parent or guardian using our services. These categories may include:
+2.1.1. Basic Contact Information (e.g., name, email address).
+2.1.2. Browsing and Usage Data from our websites, mobile applications, and digital platforms.
+2.1.3. Device Information and Log Data generated during use of our services.
+2.1.4. Data collected via Cookies and similar tracking technologies (see Section 9).
+We do not collect or process sensitive personal information as defined under the CCPA/CPRA.
+3. HOW WE USE YOUR DATA
+3.1. Permitted Uses:
+(a) To operate and improve our services.
+(b) To analyze usage trends and tailor our offerings.
+(c) To develop new features and products.
+(d) To support our day-to-day business functions.
+4. LEGAL BASIS FOR PROCESSING
+We process your personal data only when at least one of the following lawful bases applies:
+4.1. Consent – where you have provided explicit consent.
+4.2. Contract – where processing is necessary for the performance of a contract with you.
+4.3. Legal Obligation – where processing is required by law.
+4.4. Legitimate Interests – where processing is necessary for our bona fide business interests, such as providing support to parents, improving app functionality, and ensuring security. This applies only to parental data and never to data related to children.
+5. DATA SHARING
+5.1. Permitted Data Sharing Recipients:
+We do not sell or share data with advertisers or ad networks. We may share limited parental data with:
+(a) Our subsidiaries and affiliated companies.
+(b) Trusted partners and service providers who assist in our business operations.
+Any international transfers will be conducted in accordance with applicable data protection laws.
+6. DATA SECURITY AND BREACH NOTIFICATION
+We implement appropriate technical and organizational measures to safeguard your personal data against unauthorized access, alteration, or disclosure. In the event of a data breach, we will notify the relevant supervisory authority and affected individuals as required by law.
+7. DATA RETENTION
+We retain parental data only as long as necessary for the purposes outlined in this policy, and no longer than 12 months after the parent’s last interaction with our services. Data deletion requests will be honored promptly.
+8. YOUR RIGHTS
+Under applicable laws (including GDPR and CCPA/CPRA), you have the following rights:
+8.1. The right to access your personal data.
+8.2. The right to rectify inaccurate or incomplete data.
+8.3. The right to erasure, subject to legal limitations.
+8.4. The right to restrict processing where applicable.
+8.5. The right to data portability.
+8.6. The right to object to processing based on our minimal legitimate interests.
+8.7. Right to Withdraw Consent and Request Deletion.
+8.7.5. Certain personal data, including transaction records and security logs, may be retained as required by law or for legitimate business interests, including fraud prevention, compliance with legal obligations, and dispute resolution. Upon receiving a valid deletion request, we will erase your personal data from our systems and instruct any third-party service providers to delete your data unless legal obligations prevent them from doing so.
+9. COOKIES AND TRACKING TECHNOLOGIES
+We use cookies and similar tracking technologies to enhance your experience and analyze website usage. You may manage your cookie preferences through your browser settings. Additional details are provided in our Cookie Policy.
+10. DATA PROTECTION OFFICER AND CONTACT INFORMATION
+For any questions regarding this Privacy Policy or to exercise your rights, please contact:
+Data Protection Officer: Mark Barney
+Email: data.protection@bighappyhc.com
+11. CHANGES TO THIS POLICY
+We reserve the right to update this Privacy Policy from time to time. Any changes will be posted on our website with an updated effective date. Your continued use of our services constitutes acceptance of such changes.
+12. GOVERNING LAW
+This Privacy Policy shall be governed by and construed in accordance with the laws of Connecticut, except where applicable data protection laws (such as GDPR) require compliance with local jurisdictional laws.
+13. CALIFORNIA CONSUMER PRIVACY RIGHTS
+13.1. Applicability:
+(a) If you are a resident of California, additional rights under the CCPA and CPRA apply.
+13.2. Additional Rights:
+(a) The right to request disclosure of the categories and specific pieces of personal data collected about you.
+(b) The right to request deletion of your personal data (subject to exceptions).
+(c) The right to opt out of the sale or sharing of your personal data.
+(d) The right to receive equal service and pricing without discrimination for exercising these rights.
+13.3. Notice:
+At or before the point of data collection, California consumers will be provided with a notice that includes:
+(a) The categories of personal data collected.
+(b) The purposes for which the data is collected.
+(c) The categories of third parties with whom your data may be shared.
+We do not sell your personal data as defined under the CCPA.
+14. EXERCISE OF CALIFORNIA PRIVACY RIGHTS
+To exercise your rights under the CCPA/CPRA, submit a verifiable request to our Data Protection Officer using the contact information in Section 10. Upon receiving a valid request, we will verify your identity and respond within 45 days, with a possible extension of an additional 45 days if necessary. We will not discriminate against any California consumer for exercising their rights under these laws.
+15. CALIFORNIA DATA COLLECTION NOTICE
+At the point of data collection from California residents, we will provide clear and conspicuous notice that explains:
+(a) The categories of personal data collected.
+(b) The purposes for which the data is used.
+(c) The rights available to California consumers under the CCPA and CPRA.
+(d) Instructions on how to exercise those rights.
+16. CHILDREN’S PRIVACY – OUR COMMITMENT TO KEEPING KIDS SAFE
+16.1. Collection of Data  
+16.1.1. We never knowingly collect any personal information from children under 13 (or the applicable age in your region). Our services are designed for young children to enjoy safely, but any data we collect—if any—is always linked to the parent or guardian, not to the child. 
+
+16.1.2. We do not collect, store, or share any of the following child-specific information:
+(a) A child’s name, birthdate, or personal details;   
+(b) A child’s voice, face, or behavioral patterns;   
+(c) Any data that could identify a child. 
+
+16.2. Accidental Collection and Deletion  
+
+16.2.1. If we ever discover that a child’s personal information has been collected accidentally, we will delete it immediately.  
+
+16.2.2. If you believe we have inadvertently collected your child’s personal information, please contact us at data.protection@bighappyhc.com with details, and we will confirm deletion within 10 business days. 
+
+16.3. Parental Data  
+
+16.3.1. We may collect limited data tied to the parent’s account or device, such as app purchase details, general app usage data, and tracking for parents (e.g., if they sign up for emails or promotions). This data is never linked to the child and is solely used to improve the experience for parents and families. 
+
+16.4. Advertising and Tracking  
+
+16.4.1. We do not display ads in our services, use behavioral tracking on children, or share data with advertisers. Any data we collect is used solely to enhance the parent’s experience and is never used for marketing to children. 
+
+16.5. Parental Control and Contact  
+
+16.5.1. As a parent, you always have control over your data. If you have any questions or wish to review or delete data associated with your account, please contact us at data.protection@bighappyhc.com. 
+
+16.6  Parental Consent and Verification
+By purchasing our app or creating an account, you affirm that you are the parent or legal guardian and consent to the collection and use of your data as outlined in this Privacy Policy.

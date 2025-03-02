@@ -1,0 +1,35 @@
+Cookie Policy for Big Happy Holding Company and Subsidiaries
+Effective Date: March 1, 2025
+1. INTRODUCTION
+This Cookie Policy explains how Big Happy Holding Company and its subsidiaries (“Big Happy”, “we”, “our”, or “us”) use cookies and similar tracking technologies on our websites, mobile applications, and digital platforms. By continuing to use our services, you consent to our use of cookies as described in this Policy.
+2. WHAT ARE COOKIES?
+Cookies are small text files placed on your device by a website. They are widely used to make websites work, or work more efficiently, as well as to provide information to the website owners. Cookies may be "session" cookies that expire when you close your browser, or "persistent" cookies that remain on your device until they expire or are deleted.
+3. HOW WE USE COOKIES
+We use cookies for the following purposes:
+3.1. Strictly Necessary Cookies – to enable core functionality such as security, network management, and accessibility.
+3.2. Performance Cookies – to collect information about how visitors use our website, which helps us improve the functionality and performance of our services.
+3.3. Functionality Cookies – to remember choices you make (such as your user name, language, or region) and provide enhanced, personalized features.
+3.4. Targeting or Advertising Cookies – to deliver content that is more relevant to you and your interests and to measure the effectiveness of our advertising campaigns.
+Under applicable laws, we process strictly necessary cookies based on our legitimate interests in providing a secure and functional website. For all other cookies, we rely on your explicit consent, which you can manage at any time.
+Retention Periods:
+• Strictly necessary cookies are retained only for the duration of your session.
+• Performance and functionality cookies may persist for up to 12 months.
+• Advertising cookies set by third parties may persist for up to 24 months, depending on their policy.
+4. THIRD-PARTY COOKIES
+We may allow third parties (such as analytics providers or advertising partners) to place cookies on your device through our websites. These third parties may collect information about your online activities over time and across different websites when you use our services. Their use of cookies is subject to their respective privacy policies.
+For a complete list of third-party cookies used on our site, their purposes, and retention periods, please visit our [Cookie Settings Page] or view our [Cookie List].
+5. CONTROLLING COOKIES
+Most browsers allow you to refuse or accept cookies. You can adjust your browser settings to refuse cookies or to alert you when cookies are being sent. However, if you choose to refuse cookies, you may not be able to access certain parts of our services or experience full functionality.
+If you are located in the European Union, UK, or jurisdictions requiring explicit consent, you will be presented with a cookie consent banner when you first visit our site, allowing you to accept or decline specific types of cookies.
+California residents can manage their cookie preferences and opt out of certain data sharing via our [Do Not Sell or Share My Information] link.
+To manage your cookie preferences or withdraw consent at any time, visit our [Cookie Preferences] page.
+6. DATA PROTECTION OFFICER AND CONTACT INFORMATION
+For any questions regarding this Cookie Policy or to exercise your rights, please contact our Data Protection Officer:
+Data Protection Officer: Mark Barney
+Email: data.protection@bighappyhc.com
+7. CHANGES TO THIS COOKIE POLICY
+We reserve the right to update this Cookie Policy from time to time. Any changes will be posted on our website with an updated effective date. Your continued use of our services after any changes signifies your acceptance of the updated Policy.
+8. GOVERNING LAW
+This Cookie Policy shall be governed by and construed in accordance with the laws of Connecticut. However, for individuals located in the European Union or other jurisdictions with specific data protection laws, this policy is subject to the GDPR and ePrivacy Directive as applicable.
+
+
