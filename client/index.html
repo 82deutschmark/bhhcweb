@@ -58,7 +58,7 @@
             dismiss: "Accept Cookies",
             deny: "Decline",
             link: "Learn More",
-            href: "/cookie-policy.html",
+            href: "./cookie-policy.html",
             policy: "Cookie Policy"
           },
           type: "opt-in",
@@ -73,16 +73,19 @@
             const hasConsented = this.hasConsented();
             console.log(hasConsented ? 'Consent accepted' : 'Consent declined');
             
-            // Only redirect if consent is declined, stay on page if accepted
+            // Update consent status without redirecting
+            window.cookieConsentGranted = hasConsented;
+            
             if (hasConsented) {
-              window.cookieConsentGranted = true;
               // Load non-essential scripts if needed
               console.log('Loading non-essential scripts after consent');
               // Example: load analytics or other third-party scripts
               // loadAnalytics();
             } else {
-              // Only redirect to policy page if consent is declined
-              if (window.location.pathname !== '/cookie-policy.html' && 
+              // Only redirect to policy page if consent is explicitly declined
+              // via the "Decline" button, not during initialization
+              if (status === 'deny' && 
+                  window.location.pathname !== '/cookie-policy.html' && 
                   window.location.pathname !== '/privacy-policy.html') {
                 window.location.href = '/cookie-policy.html';
               }
