@@ -12,9 +12,47 @@
     <meta property="og:type" content="website" />
     <meta property="og:url" content="/" />
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/cookieconsent@3/build/cookieconsent.min.css">
   </head>
   <body>
     <div id="root"></div>
     <script type="module" src="/src/main.tsx"></script>
+    <script src="https://cdn.jsdelivr.net/npm/cookieconsent@3/build/cookieconsent.min.js"></script>
+    <script>
+      window.addEventListener('load', function() {
+        window.cookieconsent.initialise({
+          palette: {
+            popup: {
+              background: "#f8f9fa",
+              text: "#333333"
+            },
+            button: {
+              background: "hsl(215, 70%, 40%)",
+              text: "#ffffff"
+            }
+          },
+          theme: "classic",
+          position: "bottom-right",
+          content: {
+            message: "Big Happy Holding Company uses cookies to ensure you get the best experience on our website. By continuing to use our services, you consent to our use of cookies as described in our Cookie Policy.",
+            dismiss: "Accept Cookies",
+            deny: "Decline",
+            link: "Learn More",
+            href: "/cookie-policy.html",
+            policy: "Cookie Policy"
+          },
+          type: "opt-in",
+          revokable: true,
+          onStatusChange: function(status) {
+            console.log(this.hasConsented() ? 'Consent accepted' : 'Consent declined');
+          }
+        });
+      });
+    </script>
+    <style>
+      .cc-revoke {
+        display: block !important;
+      }
+    </style>
   </body>
 </html>
