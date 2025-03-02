@@ -32,7 +32,7 @@
             }
           },
           theme: "classic",
-          position: "bottom-right",
+          position: "bottom",
           content: {
             message: "Big Happy Holding Company uses cookies to ensure you get the best experience on our website. By continuing to use our services, you consent to our use of cookies as described in our Cookie Policy.",
             dismiss: "Accept Cookies",
@@ -52,6 +52,14 @@
     <style>
       .cc-revoke {
         display: block !important;
+      }
+      .cc-window.cc-banner {
+        width: 100%;
+        left: 0;
+        right: 0;
+        position: fixed;
+        bottom: 0;
+        box-shadow: 0 -2px 10px rgba(0, 0, 0, 0.1);
       }
     </style>
   </body>
