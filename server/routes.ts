@@ -7,33 +7,9 @@ import express from "express";
 // the newest OpenAI model is "gpt-4o" which was released May 13, 2024. do not change this unless explicitly requested by the user
 const openai = new OpenAI({ apiKey: process.env.OPENAI_API_KEY });
 
-// Create an assistant for BHHC
-let assistantId: string;
-
-async function createAssistant() {
-  const assistant = await openai.beta.assistants.create({
-    name: "BHHC Assistant",
-    instructions: `You are a helpful AI assistant for Big Happy Holding Company (BHHC). 
-    Be professional, concise, and friendly. Focus on providing information about BHHC's portfolio and services.
-    Specifically, you should be knowledgeable about:
-    1. Peekaboo Barn and other mobile applications in our portfolio
-    2. Our investment approach and strategy
-    3. Our leadership team and company values
-    Always maintain a professional tone while being approachable and engaging.`,
-    model: "gpt-4o",
-  });
-  return assistant.id;
-}
-
-// Initialize the assistant
-(async () => {
-  try {
-    assistantId = await createAssistant();
-    console.log('Assistant created successfully');
-  } catch (error) {
-    console.error('Failed to create assistant:', error);
-  }
-})();
+// Use the specific assistant ID
+const ASSISTANT_ID = "asst_njeoIssy75OfIctRtm15loXX";
+const VECTOR_STORE_ID = "vs_67c5f4fbc5d48191ac1994b4b293bff4";
 
 export async function registerRoutes(app: Express): Promise<Server> {
   app.use(express.json());
@@ -43,7 +19,14 @@ export async function registerRoutes(app: Express): Promise<Server> {
 
   app.post('/api/chat/thread', async (req, res) => {
     try {
-      const thread = await openai.beta.threads.create();
+      const thread = await openai.beta.threads.create({
+        tools: [{
+          type: "file_search",
+          config: {
+            vector_store_id: VECTOR_STORE_ID
+          }
+        }]
+      });
       res.json({ threadId: thread.id });
     } catch (error) {
       console.error('Thread creation error:', error);
@@ -59,19 +42,21 @@ export async function registerRoutes(app: Express): Promise<Server> {
         return res.status(400).json({ error: 'ThreadId and message are required' });
       }
 
-      if (!assistantId) {
-        return res.status(500).json({ error: 'Assistant not initialized' });
-      }
-
       // Add the message to the thread
       await openai.beta.threads.messages.create(threadId, {
         role: "user",
         content: message,
       });
 
-      // Run the assistant on the thread
+      // Run the assistant on the thread with the specific assistant ID
       const run = await openai.beta.threads.runs.create(threadId, {
-        assistant_id: assistantId,
+        assistant_id: ASSISTANT_ID,
+        tools: [{
+          type: "file_search",
+          config: {
+            vector_store_id: VECTOR_STORE_ID
+          }
+        }]
       });
 
       // Wait for the run to complete
