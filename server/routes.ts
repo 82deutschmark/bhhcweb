@@ -19,14 +19,7 @@ export async function registerRoutes(app: Express): Promise<Server> {
 
   app.post('/api/chat/thread', async (req, res) => {
     try {
-      const thread = await openai.beta.threads.create({
-        tools: [{
-          type: "file_search",
-          config: {
-            vector_store_id: VECTOR_STORE_ID
-          }
-        }]
-      });
+      const thread = await openai.beta.threads.create();
       res.json({ threadId: thread.id });
     } catch (error) {
       console.error('Thread creation error:', error);
