@@ -42,15 +42,14 @@ export async function registerRoutes(app: Express): Promise<Server> {
       });
 
       // Run the assistant on the thread with the specific assistant ID
+      // Note: Not specifying tools will use the tools already configured with the assistant
       const run = await openai.beta.threads.runs.create(threadId, {
-        assistant_id: ASSISTANT_ID,
-        tools: [{
-          type: "file_search"
-        }]
+        assistant_id: ASSISTANT_ID
       });
 
       // Wait for the run to complete
       let runStatus = await openai.beta.threads.runs.retrieve(threadId, run.id);
+      
       while (runStatus.status === "in_progress" || runStatus.status === "queued") {
         await new Promise(resolve => setTimeout(resolve, 1000));
         runStatus = await openai.beta.threads.runs.retrieve(threadId, run.id);
@@ -66,9 +65,19 @@ export async function registerRoutes(app: Express): Promise<Server> {
             response: lastMessage.content[0].text.value
           });
         }
+      } else if (runStatus.status === "failed") {
+        console.error("Run failed with error:", runStatus.last_error);
+        return res.status(500).json({ 
+          error: 'Assistant run failed', 
+          details: runStatus.last_error?.message || 'Unknown error' 
+        });
+      } else if (runStatus.status === "requires_action") {
+        console.log("Run requires action:", runStatus.required_action);
+        // Handle required actions if needed
+        return res.status(500).json({ error: 'Assistant requires action that is not implemented' });
       }
 
-      throw new Error(`Run ended with status: ${runStatus.status}`);
+      throw new Error(`Run ended with unexpected status: ${runStatus.status}`);
     } catch (error) {
       console.error('Chat API Error:', error);
       return res.status(500).json({ error: 'Failed to process chat request' });
