@@ -45,7 +45,7 @@ export async function registerRoutes(app: Express): Promise<Server> {
       const run = await openai.beta.threads.runs.create(threadId, {
         assistant_id: ASSISTANT_ID,
         tools: [{
-          type: "retrieval"
+          type: "file_search"
         }]
       });
 
