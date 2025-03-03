@@ -49,7 +49,7 @@ export async function registerRoutes(app: Express): Promise<Server> {
 
       // Wait for the run to complete
       let runStatus = await openai.beta.threads.runs.retrieve(threadId, run.id);
-      
+
       while (runStatus.status === "in_progress" || runStatus.status === "queued") {
         await new Promise(resolve => setTimeout(resolve, 1000));
         runStatus = await openai.beta.threads.runs.retrieve(threadId, run.id);
@@ -79,6 +79,15 @@ export async function registerRoutes(app: Express): Promise<Server> {
 
       throw new Error(`Run ended with unexpected status: ${runStatus.status}`);
     } catch (error) {
+      // Check if it's a rate limit or token limit error
+      const errorMessage = error instanceof Error ? error.message : String(error);
+      if (errorMessage.includes('tokens per min') || errorMessage.includes('too large') || errorMessage.includes('rate limit') || errorMessage.includes('429')) {
+        console.warn('Rate limit encountered:', errorMessage);
+        return res.status(429).json({ 
+          error: 'OpenAI rate limit reached', 
+          message: 'The service is currently experiencing high demand. Please wait a moment and try again.'
+        });
+      }
       console.error('Chat API Error:', error);
       return res.status(500).json({ error: 'Failed to process chat request' });
     }
