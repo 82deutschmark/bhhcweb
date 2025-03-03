@@ -67,11 +67,34 @@ export function ChatWidget() {
       const data = await response.json();
       setMessages(prev => [...prev, { role: 'assistant', content: data.response }]);
     } catch (error) {
-      toast({
-        title: "Error",
-        description: "Failed to send message. Please try again.",
-        variant: "destructive",
-      });
+      const errorResponse = error instanceof Error ? error.cause as any : null;
+      
+      // Check if this is a rate limit error with our custom kid-friendly message
+      if (errorResponse?.status === 429 && errorResponse?.data?.isKidFriendly) {
+        // Add the error message to the chat as a special assistant message
+        setMessages(prev => [
+          ...prev, 
+          { 
+            role: 'assistant', 
+            content: errorResponse.data.message || "Oops! My little robot brain needs a quick nap. Can you wait a tiny bit? 🤖💤" 
+          }
+        ]);
+      } else {
+        // If not a rate limit error, show the error toast
+        setMessages(prev => [
+          ...prev, 
+          { 
+            role: 'assistant', 
+            content: "Oh no! Something went wrong with my robot circuits! 🤖⚡ Can you try again in a little bit?" 
+          }
+        ]);
+        
+        toast({
+          title: "Oopsie Daisy!",
+          description: "My robot friend had a little trouble. Let's try again!",
+          variant: "destructive",
+        });
+      }
     } finally {
       setIsLoading(false);
     }
@@ -92,10 +115,19 @@ export function ChatWidget() {
               className={`p-3 rounded-lg ${
                 msg.role === 'user'
                   ? 'bg-primary text-primary-foreground ml-8'
-                  : 'bg-muted mr-8'
+                  : msg.content.includes('robot') || msg.content.includes('Oops')
+                    ? 'bg-yellow-100 border-2 border-yellow-300 mr-8 animate-bounce-once'
+                    : 'bg-muted mr-8'
               }`}
             >
-              {msg.content}
+              {msg.content.includes('robot') || msg.content.includes('Oops') ? (
+                <div className="flex items-center">
+                  <span className="mr-2 text-xl">🤖</span>
+                  <span>{msg.content}</span>
+                </div>
+              ) : (
+                msg.content
+              )}
             </div>
           ))}
         </div>

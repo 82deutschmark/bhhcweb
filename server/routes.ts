@@ -44,7 +44,9 @@ export async function registerRoutes(app: Express): Promise<Server> {
       // Run the assistant on the thread with the specific assistant ID
       // Note: Not specifying tools will use the tools already configured with the assistant
       const run = await openai.beta.threads.runs.create(threadId, {
-        assistant_id: ASSISTANT_ID
+        assistant_id: ASSISTANT_ID,
+        // Set token limit to avoid rate limiting issues
+        max_tokens: 4000
       });
 
       // Wait for the run to complete
@@ -85,7 +87,8 @@ export async function registerRoutes(app: Express): Promise<Server> {
         console.warn('Rate limit encountered:', errorMessage);
         return res.status(429).json({ 
           error: 'OpenAI rate limit reached', 
-          message: 'The service is currently experiencing high demand. Please wait a moment and try again.'
+          message: 'Oops! My little robot brain needs a quick nap. Your message was super duper long! Can you send a shorter message or wait a tiny bit for me to wake up? 🤖💤',
+          isKidFriendly: true
         });
       }
       console.error('Chat API Error:', error);
