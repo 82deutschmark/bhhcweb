@@ -44,9 +44,7 @@ export async function registerRoutes(app: Express): Promise<Server> {
       // Run the assistant on the thread with the specific assistant ID
       // Note: Not specifying tools will use the tools already configured with the assistant
       const run = await openai.beta.threads.runs.create(threadId, {
-        assistant_id: ASSISTANT_ID,
-        // Set token limit to avoid rate limiting issues
-        max_tokens: 4000
+        assistant_id: ASSISTANT_ID
       });
 
       // Wait for the run to complete
