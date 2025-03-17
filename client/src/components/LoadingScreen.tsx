@@ -24,11 +24,12 @@ export default function LoadingScreen({ isLoading }: LoadingScreenProps) {
               repeatType: "reverse",
               repeatDelay: 0.5,
             }}
+            className="w-full h-full flex items-center justify-center"
           >
             <img
               src="/images/BHHC-logo2.png"
               alt="BHHC Logo"
-              className="w-32 h-auto"
+              className="h-[90vh] w-auto object-contain"
             />
           </motion.div>
         </motion.div>

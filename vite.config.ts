@@ -33,4 +33,12 @@ export default defineConfig({
     outDir: path.resolve(__dirname, "dist/public"),
     emptyOutDir: true,
   },
+  server: {
+    host: true,
+    port: 5000,
+    strictPort: true,
+    hmr: {
+      port: 5001
+    }
+  }
 });

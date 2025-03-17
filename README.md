@@ -2,6 +2,15 @@
 
 Personal website built with React and Express, deployed at [www.bighappyholding.com](https://www.bighappyholding.com)
 
+## Features
+
+- Modern, responsive design with Tailwind CSS
+- Smooth animations and transitions using Framer Motion
+- Full-screen loading animations with BHHC branding
+- Optimized image handling and delivery
+- Server-side rendering capabilities
+- Type-safe development with TypeScript
+
 ## Development
 
 Start local development server:
@@ -10,6 +19,12 @@ npm run dev
 ```
 
 The site will be available at http://localhost:5000
+
+### Recent Improvements
+- Enhanced loading screen with full-viewport BHHC logo animation
+- Improved server configuration for better Windows compatibility
+- Optimized image handling and delivery
+- Added smooth transitions and animations
 
 ## Deployment Workflow
 
@@ -34,6 +49,11 @@ Settings > Environment variables
 ## Project Structure
 ```
 ├── client/             # Frontend React code
+│   ├── src/           # React source code
+│   │   ├── components/  # React components
+│   │   └── styles/     # CSS and styling
+│   └── public/        # Static assets
+│       └── images/    # Image assets
 ├── server/            # Express.js backend
 ├── shared/            # Shared types
 └── vite.config.ts     # Build config
@@ -67,10 +87,15 @@ Settings > Environment variables
 4. Changes automatically go live on www.bighappyholding.com
 
 ### Adding New Pages
-Add new React components in `client/src/` directory
+Add new React components in `client/src/components/` directory
 
 ### Updating Styles
 Using Tailwind CSS - edit classes directly in components
+
+### Working with Images
+- Place new images in `client/public/images/`
+- Use relative paths starting with `/images/` in components
+- Optimize images before adding to the project
 
 ## Configuration Issues to Address
 
@@ -108,7 +133,10 @@ Using Tailwind CSS - edit classes directly in components
 ```
 ├── client/             # Frontend React application
 │   ├── src/           # React source code
+│   │   ├── components/  # React components
+│   │   └── styles/     # CSS and styling
 │   └── public/        # Static assets
+│       └── images/    # Image assets
 ├── server/            # Express.js server
 ├── shared/            # Shared types and utilities
 └── vite.config.ts     # Vite configuration
