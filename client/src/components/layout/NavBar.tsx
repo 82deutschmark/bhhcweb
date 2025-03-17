@@ -3,6 +3,7 @@ import { Link } from "wouter";
 import { Menu } from "lucide-react";
 import { Button } from "@/components/ui/button";
 import { Sheet, SheetContent, SheetTrigger } from "@/components/ui/sheet";
+import { motion } from "framer-motion";
 
 const NavBar = () => {
   const [isOpen, setIsOpen] = useState(false);
@@ -18,7 +19,18 @@ const NavBar = () => {
     <nav className="fixed w-full bg-background/95 backdrop-blur supports-[backdrop-filter]:bg-background/60 z-50 border-b">
       <div className="container mx-auto px-4 h-16 flex items-center justify-between">
         <Link href="/">
-          <span className="font-bold text-xl cursor-pointer">BHHC</span>
+          <motion.div
+            initial={{ opacity: 0, y: -20 }}
+            animate={{ opacity: 1, y: 0 }}
+            transition={{ duration: 0.5 }}
+            className="cursor-pointer flex items-center"
+          >
+            <img
+              src="/images/BHHC-logo.png"
+              alt="BHHC Logo"
+              className="h-10 w-auto"
+            />
+          </motion.div>
         </Link>
 
         {/* Desktop Navigation */}

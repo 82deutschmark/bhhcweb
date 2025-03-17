@@ -1,6 +1,7 @@
 import { Card, CardContent } from "@/components/ui/card";
 import { StarIcon, ExternalLinkIcon } from "lucide-react";
 import { SiAppstore } from "react-icons/si";
+import { motion } from "framer-motion";
 
 const StarRating = ({ rating }: { rating: number }) => (
   <div className="flex text-yellow-400">
@@ -28,11 +29,11 @@ export default function Portfolio() {
       id="portfolio"
       className="py-32 bg-gradient-to-br from-gray-50 via-white to-gray-50"
     >
-      <div className="container mx-auto px-4 content-container"> {/* Added content-container class here */}
-        <h2 className="text-4xl font-bold mb-16 text-center">
-          Featured Portfolio
-        </h2>
-        <div className="max-w-6xl mx-auto">
+      <div className="container mx-auto px-4">
+        <h2 className="text-4xl font-bold mb-16 text-center">Featured Portfolio</h2>
+        
+        {/* Main Peekaboo Barn Card */}
+        <div className="max-w-6xl mx-auto mb-24">
           <Card className="overflow-hidden hover:shadow-xl transition-shadow duration-300">
             <CardContent className="p-12">
               <div className="grid md:grid-cols-2 gap-12 items-center">
@@ -104,6 +105,73 @@ export default function Portfolio() {
               </div>
             </CardContent>
           </Card>
+        </div>
+
+        {/* Sleeping Animals Feature Section */}
+        <div className="max-w-6xl mx-auto bg-gradient-to-b from-primary/5 to-transparent rounded-3xl p-12">
+          <div className="text-center mb-12">
+            <h3 className="text-3xl font-bold text-primary mb-4">Meet Our Sleepy Friends</h3>
+            <p className="text-lg text-gray-600 max-w-2xl mx-auto">
+              When the barn doors close and the sun sets, our beloved farm animals take a well-deserved rest. 
+              Each character in Peekaboo Barn has been lovingly crafted to create magical moments of learning and joy.
+            </p>
+          </div>
+          
+          <div className="grid lg:grid-cols-2 gap-12 items-center">
+            <motion.div
+              initial={{ opacity: 0, x: -20 }}
+              whileInView={{ opacity: 1, x: 0 }}
+              transition={{ duration: 0.8, delay: 0.2 }}
+              viewport={{ once: true }}
+              className="relative"
+            >
+              <div className="absolute inset-0 bg-gradient-to-br from-primary/20 to-transparent rounded-3xl transform -rotate-3"></div>
+              <img
+                src="/images/sleeping_animals.png"
+                alt="Sleeping Farm Animals"
+                className="relative z-10 w-full h-auto rounded-3xl shadow-xl transform hover:rotate-2 transition-transform duration-300"
+              />
+            </motion.div>
+            
+            <div className="space-y-6">
+              <motion.div
+                initial={{ opacity: 0, y: 20 }}
+                whileInView={{ opacity: 1, y: 0 }}
+                transition={{ duration: 0.6, delay: 0.4 }}
+                viewport={{ once: true }}
+                className="bg-white/80 backdrop-blur-sm rounded-xl p-6 shadow-lg"
+              >
+                <h4 className="text-xl font-semibold mb-3">Designed for Sweet Dreams</h4>
+                <p className="text-gray-600">
+                  Our characters bring warmth and comfort to bedtime routines, helping little ones 
+                  wind down with familiar, friendly faces from their favorite farm game.
+                </p>
+              </motion.div>
+              
+              <motion.div
+                initial={{ opacity: 0, y: 20 }}
+                whileInView={{ opacity: 1, y: 0 }}
+                transition={{ duration: 0.6, delay: 0.6 }}
+                viewport={{ once: true }}
+                className="bg-white/80 backdrop-blur-sm rounded-xl p-6 shadow-lg"
+              >
+                <h4 className="text-xl font-semibold mb-3">Educational by Nature</h4>
+                <p className="text-gray-600">
+                  Even in their peaceful slumber, our farm friends help children learn about animals, 
+                  emotions, and the natural rhythms of day and night.
+                </p>
+              </motion.div>
+            </div>
+          </div>
+        </div>
+
+        {/* Reviews Section */}
+        <div className="mt-24">
+          <h4 className="text-2xl font-semibold mb-8 text-center">What Parents Are Saying</h4>
+          <div className="grid sm:grid-cols-2 gap-6">
+            <ReviewCard text="Perfect for toddlers! My 2-year-old loves this app and has learned so many animal names. The interface is intuitive and engaging." />
+            <ReviewCard text="Beautiful design and engaging gameplay. It's educational and entertaining at the same time. The animations are smooth and delightful." />
+          </div>
         </div>
       </div>
     </section>
