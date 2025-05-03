@@ -188,3 +188,5 @@ Your application will be available at `https://bhhcweb.pages.dev` (or your custo
 ## 📝 License
 
 MIT
+
+May 2, 2025  Registered BHHC.us
